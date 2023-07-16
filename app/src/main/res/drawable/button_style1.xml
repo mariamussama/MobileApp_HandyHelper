@@ -1,4 +1,8 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
+<<<<<<< Updated upstream
     <solid android:color="@color/off_white" /> <!-- Set the desired background color -->
+=======
+    <solid android:color="#2D4059" /> <!-- Set the desired background color -->
+>>>>>>> Stashed changes
     <corners android:radius="100dp" /> <!-- Half of the desired width/height to create a circle -->
 </shape>

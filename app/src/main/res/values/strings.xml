@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Registeration</string>
+<<<<<<< Updated upstream
     <string-array name="rangeSliderDate">
         <item>10</item>
         <item>20</item>
@@ -12,4 +13,8 @@
         <item>200</item>
         <item>700</item>
     </string-array>
+=======
+    <string name="create_post_icon_description">Create a new post</string>
+
+>>>>>>> Stashed changes
 </resources>
