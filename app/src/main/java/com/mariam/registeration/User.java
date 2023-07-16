@@ -10,6 +10,10 @@ public class User implements Serializable {
     private int b_year = 0, b_month = 0, b_day = 0;
     private String Nat_ID = "";
 
+    private String phone = "";
+    private String interest="";
+    private boolean notify = false;
+
     public User(String username, String email, String pass, String gender,
                 int b_year, int b_month, int b_day, String Nat_ID) {
         this.username = username;
@@ -55,6 +59,18 @@ public class User implements Serializable {
         return Nat_ID;
     }
 
+    public String getPhone() {
+        return phone;
+    }
+
+    public String getInterest() {
+        return interest;
+    }
+
+    public boolean isNotify() {
+        return notify;
+    }
+
     // Setter methods
     public void setUsername(String username) {
         this.username = username;
@@ -86,5 +102,17 @@ public class User implements Serializable {
 
     public void setNat_ID(String Nat_ID) {
         this.Nat_ID = Nat_ID;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public void setInterest(String interest) {
+        this.interest = interest;
+    }
+
+    public void setNotify(boolean notify) {
+        this.notify = notify;
     }
 }
