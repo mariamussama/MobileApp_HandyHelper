@@ -129,6 +129,30 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener  {
                 {
                     ID.setError("ID not valid");
                 }
+//                else if (email.getText().toString().isEmpty()|| !email.getText().toString().contains("@"))
+//                {
+//                    email.setError("Please enter valid email");
+//                }
+//                else if (password.getText().toString().isEmpty())
+//                {
+//                    password.setError("Please enter valid Password");
+//                }
+//                else if (!password.getText().toString().equals(con_password.getText().toString()))
+//                {
+//                    con_password.setError("Passwords don't match");
+//                }
+//                else if (genderDropdown.getText().toString().isEmpty())
+//                {
+//                    genderDropdown.setError("Please enter valid gender");
+//                }
+//                else if (Date_valid && editTextDate.getText().toString().isEmpty())
+//                {
+//                    editTextDate.setError("Invalid Date");
+//                }
+//                else if (ID.getText().toString().isEmpty() || ID.getText().toString().length()!=14)
+//                {
+//                    ID.setError("ID not valid");
+//                }
                 else{
                     user_data.setUsername(username.getText().toString());
                     user_data.setEmail(email.getText().toString());

@@ -16,6 +16,10 @@ public class User implements Serializable {
     private int notify = 0;
     private String description="";
 
+    private String phone = "";
+    private String interest="";
+    private boolean notify = false;
+
     public User(String username, String email, String pass, String gender,
                 int b_year, int b_month, int b_day, String nat_ID) {
         this.username = username;
@@ -76,6 +80,18 @@ public class User implements Serializable {
 
     public String getDescription() {
         return description;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public String getInterest() {
+        return interest;
+    }
+
+    public boolean isNotify() {
+        return notify;
     }
 
     // Setter methods
