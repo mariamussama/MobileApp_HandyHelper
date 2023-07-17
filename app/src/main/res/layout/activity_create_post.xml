@@ -86,20 +86,21 @@
             </LinearLayout>
 
             <!-- Post Title -->
+
+            <!-- Location -->
             <EditText
                 android:id="@+id/textBox"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_edittext"
                 android:gravity="center_horizontal"
                 android:hint="Enter Post Title"
                 android:padding="8dp"
-                android:background="@drawable/rounded_edittext"
                 android:textColor="#2D4059"
                 android:textSize="16sp" />
 
-            <!-- Location -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -183,7 +184,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                >
 
                 <EditText
                     android:id="@+id/timeEditText"

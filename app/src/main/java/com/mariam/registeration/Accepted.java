@@ -23,7 +23,7 @@ public class Accepted extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Create an intent to open the target activity
-                Intent intent = new Intent(Accepted.this, MainActivity.class);
+                Intent intent = new Intent(Accepted.this, MyRequests.class);
                 startActivity(intent);
             }
         });

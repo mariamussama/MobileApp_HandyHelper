@@ -87,7 +87,7 @@ public class Applicants extends AppCompatActivity {
     }
 
     private void goback() {
-        Intent intent = new Intent(Applicants.this, MainActivity.class);
+        Intent intent = new Intent(Applicants.this, MyRequests.class);
         startActivity(intent);
     }
 
@@ -118,6 +118,8 @@ public class Applicants extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     new UpdateApplicationStatusTask().execute(applicant.getNatID(), String.valueOf(getIntent().getIntExtra("post_id", -1)), "A");
+                    Intent intent = new Intent(Applicants.this, Accepted.class);
+                    startActivity(intent);
                 }
             });
 
@@ -151,6 +153,7 @@ public class Applicants extends AppCompatActivity {
             try {
                 URL url = new URL("http://192.168.1.5:3000/applicants/" + postId);
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                Log.e("TAG", "URL is "+ url);
 
                 int responseCode = connection.getResponseCode();
                 if (responseCode == HttpURLConnection.HTTP_OK) {
@@ -185,8 +188,9 @@ public class Applicants extends AppCompatActivity {
                     for (int i = 0; i < jsonArray.length(); i++) {
                         JSONObject jsonObject = jsonArray.getJSONObject(i);
                         String natID = jsonObject.getString("national_id");
-                        Double rating = jsonObject.getDouble("rating");
+                        Double rating = jsonObject.isNull("rating") ? 0.0 : jsonObject.getDouble("rating");
                         String username = jsonObject.getString("username");
+                        Log.e("TAG","THE JSON IS " + jsonObject);
 
                         Applicant applicant = new Applicant(natID, rating, username);
                         itemList.add(applicant);

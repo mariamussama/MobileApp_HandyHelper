@@ -123,7 +123,7 @@ public class PostService extends AppCompatActivity {
 
     private void goback() {
         // Start a new activity or perform any other action you desire
-        Intent intent = new Intent(PostService.this, MainActivity.class);
+        Intent intent = new Intent(PostService.this, MyRequests.class);
         startActivity(intent);
     }
 

@@ -38,7 +38,8 @@
         android:layout_alignParentBottom="true"
         android:background="#FFFFFF"
         android:gravity="center"
-        android:weightSum="3">
+        android:weightSum="3"
+        >
 
         <!-- Navigation icons -->
         <ImageView
@@ -79,17 +80,23 @@
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF">
+            android:background="#FFFFFF"
+            android:backgroundTint="#2D4059">
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="My Requests" />
+                android:text="My Requests"
+                android:backgroundTint="#2D4059"
+                />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="My Applications" />
+                android:text="My Applications"
+                android:backgroundTint="#2D4059"
+
+                />
         </com.google.android.material.tabs.TabLayout>
 
         <!-- ListView -->

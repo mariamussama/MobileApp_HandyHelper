@@ -99,7 +99,7 @@ public class MyApplications extends AppCompatActivity {
 
                 if (position == 0) {
                     // My Requests tab selected
-                    Intent intent = new Intent(MyApplications.this, MainActivity.class);
+                    Intent intent = new Intent(MyApplications.this, MyRequests.class);
 
                     // Apply custom transition animations
                     ActivityOptionsCompat options = ActivityOptionsCompat.makeCustomAnimation(MyApplications.this,
