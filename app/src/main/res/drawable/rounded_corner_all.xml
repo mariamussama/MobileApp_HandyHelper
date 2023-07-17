@@ -3,7 +3,11 @@
 
 
     <solid
+<<<<<<< Updated upstream
         android:color="@color/lightBlue"/>
+=======
+        android:color="#DBE2EF"/>
+>>>>>>> Stashed changes
 
     <corners
         android:topLeftRadius="15dp"
